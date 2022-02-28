@@ -1,0 +1,439 @@
+
+
+/********************************GENERAL CSS*************************************/
+*
+{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body
+{
+    height:100vh;
+    font-family: 'Quicksand', sans-serif;
+    background:linear-gradient(120deg, #F8F1D0,#D6CDB6);
+}
+
+header
+{
+    width: 100%;
+    height: 10vh;
+    background:#D6CDB6;
+    
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title
+{
+    margin-left: 30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h2
+{
+    margin-left:10px;
+    color:#585858;
+}
+
+.buttons
+{
+    margin-right: 30px;
+}
+
+button
+{
+    border: none;
+    padding: 10px 20px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5rem;
+    color:#585858;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+button:hover
+{
+    background: #585858;
+    color: #fff;
+}
+
+input[type='submit']
+{
+    border: none;
+    padding: 10px 20px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5rem;
+    color: #585858;
+    transition: all 0.5s ease;
+}
+
+input[type='submit']:hover
+{
+    background: #585858;
+    color: #fff;
+}
+
+.container
+{
+    position:relative;
+    width: 100%;
+    height:80vh;
+    margin:auto;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+footer
+{
+    width: 100%;
+    height: 10vh;
+    background: #D6CDB6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/********************************PRODUCTS PAGE*************************************/
+
+.fa-shopping-cart
+{
+    
+    color:#585858;
+}
+
+.productListContainer
+{
+    position:absolute;
+    top:20px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+#product-list
+{
+    width:94%;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap:wrap;
+    
+}
+
+.noItemsContainer
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.noItemsImage
+{
+    transform: scale(0.8);
+    opacity:0.1;
+}
+
+.noItemsText
+{
+    font-size: 2rem;
+    opacity: 0.5;
+}
+
+.product-box
+{
+    margin:10px;
+    position: relative;
+    width: 180px;
+    height: 180px;
+    padding: 20px;
+    background:rgb(119, 143, 105);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:#fff;
+}
+
+.delete-checkbox
+{
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+
+.product-box .fa-solid
+{
+    position: relative;
+    font-size: 4rem;
+    opacity: 0.4;
+}
+
+.product-info
+{
+    margin-top: 5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.detail
+{
+    font-size: 1rem;
+}
+
+.detail.special
+{
+    font-size: 0.7rem;
+}
+
+/********************************ADD PRODUCTS PAGE*************************************/
+
+.fa-cart-plus
+{
+    
+    color:#585858;
+}
+
+#product_form
+{
+    position:absolute;
+    top:20px;
+    width:100%;
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inputElement
+{
+    margin-top: 10px;
+    position: relative;
+}
+
+label
+{
+    
+    text-align: left;
+    font-size: 1.5rem;
+    color:#585858;
+}
+
+#product_form input
+{
+    width: 300px;
+    border: none;
+    outline:none;
+    padding: 10px 20px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5rem;
+    color:#585858;
+    transition: all 0.5s ease;
+    
+}
+
+#product_form input::placeholder
+{
+    opacity:0.4;
+}
+
+input[value='Save']
+{
+    background: rgb(83, 189, 73);
+}
+
+
+
+.notificationBox
+{
+    width: 150px;
+    height: 50px;
+    padding: 10px 15px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    top:30px;
+    right:-170px;
+    font-size: 1rem;
+    color:rgb(225, 235, 230);
+    background:rgb(235, 103, 80);
+    z-index: 2;
+}
+
+.notificationBox::before
+{
+    content:"";
+    
+    border:10px solid transparent;
+    border-right:10px solid rgb(235, 103, 80);
+    position: absolute;
+    bottom:15px;
+    left:-20px;
+    width:1px;
+    height:1px;
+    
+    
+}
+
+.notificationBox.wrongValue
+{
+    height: 65px;
+}
+/*
+.special-attribute.furniture div:first-of-type
+{
+    bottom: 210px;
+}
+
+.special-attribute.furniture div:nth-of-type(2)
+{
+    bottom: 100px;
+}
+
+.special-attribute.furniture div:last-of-type
+{
+    bottom: 0px;
+}*/
+
+.common-info
+{   position: relative;
+    
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.special-attr-sel
+{
+    position: relative;
+    
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    
+}
+
+#productType
+{
+    
+    width: 300px;
+    padding:1rem;
+    position: relative;
+    appearance: none;
+    border: none;
+    outline:none;
+    padding: 10px 20px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5rem;
+    color:#585858;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.special-attr-sel::after
+{
+    content:"\25BC";
+    position: absolute;
+    top:0;
+    right: 0;
+    color:#585858;
+    background:#C0BDAE;
+    padding:1rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.special-attr-sel:hover::after
+{
+    color:#C0BDAE;
+    background:#585858;
+}
+
+.special-attr-sel .notificationBox
+{
+    top:0;
+}
+
+#productType #voidCategory
+{
+    color: rgba(0,0,0,0.2);
+}
+
+/*Div of the special attributes*/
+
+.special-attribute-box
+{
+    position: relative;
+    
+    margin-top: 30px;
+    width: 300px;
+    /*height:300px;*/
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.special-attribute
+{
+    position:relative;
+    
+    width:100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    /*border: 2px solid red;*/
+    
+}
+
+.special-attribute.hide
+{
+    display:none;
+    opacity:0;
+}
+
+.special-attribute label
+{
+    position:relative;
+}
+
+
+.special-attribute input
+{
+    margin-bottom: 10px;
+}
+
+.special-attribute-field
+{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+}
+
+.special-attribute p
+{
+    text-align: center;
+}

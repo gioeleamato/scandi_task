@@ -1,0 +1,72 @@
+[17-Feb-2022 16:47:41 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'u9orzhag2dkxz'@'35.214.241.203' (using password: YES) in /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/database.class.php:21
+Stack trace:
+#0 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/database.class.php(21): PDO->__construct('mysql:host=ilvi...', 'u9orzhag2dkxz', 'TestUserPasswor...')
+#1 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/product.class.php(15): Database->connect()
+#2 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/productViewer.class.php(8): Product->getProductList()
+#3 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/products.php(45): ProductViewer->showProductList()
+#4 {main}
+  thrown in /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/database.class.php on line 21
+[17-Feb-2022 16:55:33 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'u9orzhag2dkxz'@'35.214.241.203' (using password: YES) in /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/database.class.php:21
+Stack trace:
+#0 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/database.class.php(21): PDO->__construct('mysql:host=ilvi...', 'u9orzhag2dkxz', 'TestUserPasswor...')
+#1 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/product.class.php(15): Database->connect()
+#2 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/productViewer.class.php(8): Product->getProductList()
+#3 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/products.php(45): ProductViewer->showProductList()
+#4 {main}
+  thrown in /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/database.class.php on line 21
+[17-Feb-2022 16:55:56 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'u9orzhag2dkxz'@'35.214.241.203' (using password: YES) in /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/database.class.php:21
+Stack trace:
+#0 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/database.class.php(21): PDO->__construct('mysql:host=ilvi...', 'u9orzhag2dkxz', 'TestUserPasswor...')
+#1 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/product.class.php(15): Database->connect()
+#2 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/productViewer.class.php(8): Product->getProductList()
+#3 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/products.php(45): ProductViewer->showProductList()
+#4 {main}
+  thrown in /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/database.class.php on line 21
+[17-Feb-2022 16:55:57 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'u9orzhag2dkxz'@'35.214.241.203' (using password: YES) in /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/database.class.php:21
+Stack trace:
+#0 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/database.class.php(21): PDO->__construct('mysql:host=ilvi...', 'u9orzhag2dkxz', 'TestUserPasswor...')
+#1 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/product.class.php(15): Database->connect()
+#2 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/productViewer.class.php(8): Product->getProductList()
+#3 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/products.php(45): ProductViewer->showProductList()
+#4 {main}
+  thrown in /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/database.class.php on line 21
+[17-Feb-2022 16:58:28 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'u9orzhag2dkxz'@'35.214.241.203' (using password: YES) in /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/database.class.php:21
+Stack trace:
+#0 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/database.class.php(21): PDO->__construct('mysql:host=ilvi...', 'u9orzhag2dkxz', 'TestUserPasswor...')
+#1 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/product.class.php(15): Database->connect()
+#2 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/productViewer.class.php(8): Product->getProductList()
+#3 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/products.php(45): ProductViewer->showProductList()
+#4 {main}
+  thrown in /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/database.class.php on line 21
+[17-Feb-2022 16:59:00 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'u9orzhag2dkxz'@'35.214.241.203' (using password: YES) in /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/database.class.php:21
+Stack trace:
+#0 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/database.class.php(21): PDO->__construct('mysql:host=ilvi...', 'u9orzhag2dkxz', 'TestUserPasswor...')
+#1 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/product.class.php(15): Database->connect()
+#2 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/productViewer.class.php(8): Product->getProductList()
+#3 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/products.php(45): ProductViewer->showProductList()
+#4 {main}
+  thrown in /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/database.class.php on line 21
+[17-Feb-2022 17:00:23 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'u9orzhag2dkxz'@'35.214.241.203' (using password: YES) in /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/database.class.php:21
+Stack trace:
+#0 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/database.class.php(21): PDO->__construct('mysql:host=ilvi...', 'u9orzhag2dkxz', 'TestUserPasswor...')
+#1 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/product.class.php(15): Database->connect()
+#2 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/productViewer.class.php(8): Product->getProductList()
+#3 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/products.php(45): ProductViewer->showProductList()
+#4 {main}
+  thrown in /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/database.class.php on line 21
+[17-Feb-2022 17:10:30 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'u9orzhag2dkxz'@'35.214.241.203' (using password: YES) in /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/database.class.php:21
+Stack trace:
+#0 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/database.class.php(21): PDO->__construct('mysql:host=ilvi...', 'u9orzhag2dkxz', 'TestUserPasswor...')
+#1 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/product.class.php(15): Database->connect()
+#2 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/productViewer.class.php(8): Product->getProductList()
+#3 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/products.php(45): ProductViewer->showProductList()
+#4 {main}
+  thrown in /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/database.class.php on line 21
+[17-Feb-2022 17:10:41 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'u9orzhag2dkxz'@'35.214.241.203' (using password: YES) in /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/database.class.php:21
+Stack trace:
+#0 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/database.class.php(21): PDO->__construct('mysql:host=ilvi...', 'u9orzhag2dkxz', 'TestUserPasswor...')
+#1 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/product.class.php(15): Database->connect()
+#2 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/productViewer.class.php(8): Product->getProductList()
+#3 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/products.php(45): ProductViewer->showProductList()
+#4 {main}
+  thrown in /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/database.class.php on line 21

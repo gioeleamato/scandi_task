@@ -1,0 +1,60 @@
+[16-Feb-2022 20:37:43 UTC] PHP Fatal error:  require_once(): Failed opening required '../classes/ProductController.class.php' (include_path='.:/usr/local/php74/pear') in /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/includes/loader.inc.php on line 22
+[16-Feb-2022 21:09:57 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'u9orzhag2dkxz'@'35.214.241.203' (using password: YES) in /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/database.class.php:21
+Stack trace:
+#0 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/database.class.php(21): PDO->__construct('mysql:host=ilvi...', 'u9orzhag2dkxz', 'TestUserPasswor...')
+#1 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/product.class.php(33): Database->connect()
+#2 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/productController.class.php(9): Product->insertProduct('vfdgdfgd', 'dfgdfgdf', '44444', 'dvd', '4444 MB')
+#3 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/disc.class.php(31): ProductController->saveProduct('vfdgdfgd', 'dfgdfgdf', '44444', 'dvd', '4444 MB')
+#4 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/includes/saveProduct.php(17): Disc->saveMe()
+#5 {main}
+  thrown in /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/database.class.php on line 21
+[16-Feb-2022 21:19:39 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'u9orzhag2dkxz'@'35.214.241.203' (using password: YES) in /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/database.class.php:21
+Stack trace:
+#0 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/database.class.php(21): PDO->__construct('mysql:host=ilvi...', 'u9orzhag2dkxz', 'TestUserPasswor...')
+#1 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/product.class.php(33): Database->connect()
+#2 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/productController.class.php(9): Product->insertProduct('vfdgdfgd', 'dfgdfgdf', '44444', 'dvd', '4444 MB')
+#3 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/disc.class.php(31): ProductController->saveProduct('vfdgdfgd', 'dfgdfgdf', '44444', 'dvd', '4444 MB')
+#4 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/includes/saveProduct.php(17): Disc->saveMe()
+#5 {main}
+  thrown in /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/database.class.php on line 21
+[16-Feb-2022 21:20:06 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'u9orzhag2dkxz'@'35.214.241.203' (using password: YES) in /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/database.class.php:21
+Stack trace:
+#0 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/database.class.php(21): PDO->__construct('mysql:host=ilvi...', 'u9orzhag2dkxz', 'TestUserPasswor...')
+#1 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/product.class.php(33): Database->connect()
+#2 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/productController.class.php(9): Product->insertProduct('vfdgdfgd', 'dfgdfgdf', '44444', 'dvd', '4444 MB')
+#3 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/disc.class.php(31): ProductController->saveProduct('vfdgdfgd', 'dfgdfgdf', '44444', 'dvd', '4444 MB')
+#4 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/includes/saveProduct.php(17): Disc->saveMe()
+#5 {main}
+  thrown in /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/database.class.php on line 21
+[16-Feb-2022 21:20:23 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'u9orzhag2dkxz'@'35.214.241.203' (using password: YES) in /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/database.class.php:21
+Stack trace:
+#0 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/database.class.php(21): PDO->__construct('mysql:host=ilvi...', 'u9orzhag2dkxz', 'TestUserPasswor...')
+#1 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/product.class.php(33): Database->connect()
+#2 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/productController.class.php(9): Product->insertProduct('vfdgdfgd', 'dfgdfgdf', '44444', 'book', '22 Kg')
+#3 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/book.class.php(32): ProductController->saveProduct('vfdgdfgd', 'dfgdfgdf', '44444', 'book', '22 Kg')
+#4 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/includes/saveProduct.php(43): Book->saveMe()
+#5 {main}
+  thrown in /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/database.class.php on line 21
+[16-Feb-2022 22:13:05 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'u9orzhag2dkxz'@'35.214.241.203' (using password: YES) in /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/database.class.php:21
+Stack trace:
+#0 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/database.class.php(21): PDO->__construct('mysql:host=ilvi...', 'u9orzhag2dkxz', 'TestUserPasswor...')
+#1 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/product.class.php(33): Database->connect()
+#2 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/productController.class.php(9): Product->insertProduct('sdsdfsd', 'sfsdfsd', '3333', 'dvd', '3333 MB')
+#3 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/disc.class.php(31): ProductController->saveProduct('sdsdfsd', 'sfsdfsd', '3333', 'dvd', '3333 MB')
+#4 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/includes/saveProduct.php(17): Disc->saveMe()
+#5 {main}
+  thrown in /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/database.class.php on line 21
+[16-Feb-2022 22:15:37 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'u9orzhag2dkxz'@'35.214.241.203' (using password: YES) in /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/database.class.php:21
+Stack trace:
+#0 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/database.class.php(21): PDO->__construct('mysql:host=35.2...', 'u9orzhag2dkxz', 'TestUserPasswor...')
+#1 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/product.class.php(33): Database->connect()
+#2 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/productController.class.php(9): Product->insertProduct('sdsdfsd', 'sfsdfsd', '3333', 'dvd', '3333 MB')
+#3 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/disc.class.php(31): ProductController->saveProduct('sdsdfsd', 'sfsdfsd', '3333', 'dvd', '3333 MB')
+#4 /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/includes/saveProduct.php(17): Disc->saveMe()
+#5 {main}
+  thrown in /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/classes/database.class.php on line 21
+[16-Feb-2022 22:50:36 UTC] PHP Fatal error:  require_once(): Failed opening required './classes/book.class.php' (include_path='.:/usr/local/php74/pear') in /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/includes/loader.inc.php on line 20
+[17-Feb-2022 11:05:44 UTC] PHP Parse error:  syntax error, unexpected ':', expecting ')' in /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/includes/saveProduct.php on line 49
+[17-Feb-2022 11:06:48 UTC] PHP Parse error:  syntax error, unexpected ':', expecting ')' in /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/includes/saveProduct.php on line 49
+[17-Feb-2022 11:06:52 UTC] PHP Parse error:  syntax error, unexpected ':', expecting ')' in /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/includes/saveProduct.php on line 49
+[17-Feb-2022 11:07:03 UTC] PHP Parse error:  syntax error, unexpected ':', expecting ')' in /home/customer/www/ilviaggiatorebaltico.com/public_html/tests/includes/saveProduct.php on line 49
