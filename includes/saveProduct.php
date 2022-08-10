@@ -1,51 +1,35 @@
 <?php
+
+/**
+ * This file receives the data from the form inside addProduct.php.
+ * The category class is instantiated dynamically and the created object 
+ * is saved through the method saveMe() implemented inside each category class.
+ */
+
 include "loader.inc.php";
 
+if(isset($_POST['submit'])) {
+    $sku = $_POST["sku"];
+    $name = $_POST["name"];
+    $price = $_POST["price"];
+    $category = $_POST["category"];
 
-$sku=$_POST["sku"];
-$name=$_POST["name"];
-$price=$_POST["price"];
+    if (isset($_POST["discSize"]) && $_POST["discSize"] !== "") {
+        $special = $_POST["discSize"];
+    }
 
-$category=$_POST["category"];
+    if (isset($_POST["height"]) && isset($_POST["width"]) 
+        && isset($_POST["length"]) && ($_POST["height"] !== "" 
+        && $_POST["width"] !== "" && $_POST["length"] !== "")
+    ) {
+        $special = [$_POST["height"], $_POST["width"], $_POST["length"]];
+    }
 
+    if (isset($_POST["bookWeight"]) && $_POST["bookWeight"] !== "") {
+        $special = $_POST["bookWeight"];
+    }
 
-if(isset($_POST["discSize"]) && $_POST["discSize"]!=="")
-{
-    $discSize=$_POST["discSize"];
-
-    $saved=new Disc($sku, $name, $price, $category, $discSize);
-    $saved->saveMe();
-
-    //echo "Classe Disc istanziata";
-
+    $product = new $category($sku, $name, $price, $category, $special);
+    $product->saveMe();
 }
-
-
-if(isset($_POST["height"]) && isset($_POST["width"]) && isset($_POST["length"]) && 
-    ($_POST["height"]!=="" && $_POST["width"]!=="" && $_POST["length"]!==""))
-{
-    $height=$_POST["height"];
-    $width=$_POST["width"];
-    $length=$_POST["length"];
-
-    $saved=new Furniture($sku, $name, $price, $category, $height, $width, $length);
-    $saved->saveMe();
-
-    //echo "Classe Furniture istanziata";
-}
-
-
-if(isset($_POST["bookWeight"]) && $_POST["bookWeight"]!=="")
-{
-    $bookWeight=$_POST["bookWeight"];
-
-    $saved=new Book($sku, $name, $price, $category, $bookWeight);
-    $saved->saveMe();
-
-    //echo "Classe Book istanziata";
-}
-
-//$url="https://".$_SERVER["HTTP_HOST"]."/tests/products.php";
 header("Location: ../products.php");
-//header("Location: ".$url);
-//exit;
