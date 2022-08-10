@@ -1,7 +1,4 @@
-<?php
-    include "includes/loader.inc.php";
-?>
-
+<?php include "includes/loader.inc.php"; ?>
 
 <!DOCTYPE html>
 
@@ -29,7 +26,6 @@
             <input type="submit" id="saveButton" class="button" value="Save" form="product_form"><!--Save and goes to the list-->
             <a href="products.php"><button class="button">Cancel</button></a><!--Cancel the Save operation and goes to the list-->
         </div>
-        
     </header>
     
     <div class="container">
@@ -54,7 +50,7 @@
             <div class="special-attr-sel">
                 <select id="productType" name="category" required>
                     <option id="voidCategory" value="voidCategory">Choose a category</option>
-                    <option id="dvd" value="dvd">DVD</option>
+                    <option id="dvd" value="disc">DVD</option>
                     <option id="book" value="book">Book</option>
                     <option id="furniture" value="furniture">Furniture</option>
                 </select>
@@ -68,38 +64,17 @@
                 </div>
 
                 <div class="special-attribute furniture">
-                    
                     <label>Height (cm)</label>
                     <input type="text" id="height" name="height" required>
                     
-                    
                     <label>Width (cm)</label>
                     <input type="text" id="width" name="width" required>
-                    
                     
                     <label>Length (cm)</label>
                     <input type="text" id="length" name="length" required>
                     
                     <p>Please, provide dimensions</p>
                 </div>
-
-                <!--
-                <div class="special-attribute furniture">
-                    <div class="special-attribute-field">
-                        <label>Height (cm)</label>
-                        <input type="text" id="height" name="height" required>
-                    </div>
-                    <div class="special-attribute-field">
-                        <label>Width (cm)</label>
-                        <input type="text" id="width" name="width" required>
-                    </div>
-                    <div class="special-attribute-field">
-                        <label>Length (cm)</label>
-                        <input type="text" id="length" name="length" required>
-                    </div>
-                    <p>Please, provide dimensions</p>
-                </div>
-                -->
 
                 <div class="special-attribute book">
                     <label>Weight (KG)</label>

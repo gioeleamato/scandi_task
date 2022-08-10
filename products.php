@@ -1,7 +1,4 @@
-<?php
-    include "includes/loader.inc.php";
-?>
-
+<?php include "includes/loader.inc.php"; ?>
 
 <!DOCTYPE html>
 
@@ -29,20 +26,15 @@
             <a href="addProduct.php"><button class="button">ADD</button></a>
             <input type="submit" id="delete-product-btn" class="button" value="MASS DELETE" form="product-list"></input>
         </div>
-        
     </header>
 
-    
-
     <div class="container">
-        <?php
-            $product=new ProductViewer();
-        ?>
-
         <div class="productListContainer">
             <form action="includes/delProduct.php" method="post" id="product-list">
-                <!--sorted by PK-->
-                <?php $product->showProductList(); ?>
+                <?php
+                    $product = new ProductViewer();
+                    $product->showProductList(); //sorted by PK
+                ?>
             </form>
         </div>
     </div>
