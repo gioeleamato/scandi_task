@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * Furniture is the class that represent the furniture category.
+ * The class has 8 properties and 3 methods.
+ */
 class Furniture extends ProductController
 {
     private $sku;
@@ -9,18 +13,17 @@ class Furniture extends ProductController
     private $height;
     private $width;
     private $length;
-    private $unit="cm";  
-    //H x W x L
+    private $unit = "cm";
     
-    public function __construct($sku, $name, $price, $category, $height, $width, $length)
+    public function __construct($sku, $name, $price, $category, $special)
     {
-        $this->sku=$sku;
-        $this->name=$name;
-        $this->price=$price;
-        $this->category=$category;
-        $this->height=$height;
-        $this->width=$width;
-        $this->length=$length;
+        $this->sku = $sku;
+        $this->name = $name;
+        $this->price = $price;
+        $this->category = $category;
+        $this->height=$special[0];
+        $this->width=$special[1];
+        $this->length=$special[2];
     }
 
     private function composeSpecialAttribute()
@@ -31,6 +34,12 @@ class Furniture extends ProductController
 
     public function saveMe()
     {
-        $this->saveProduct($this->sku, $this->name, $this->price, $this->category,$this->composeSpecialAttribute());
+        $this->saveProduct(
+            $this->sku,
+            $this->name,
+            $this->price,
+            $this->category,
+            $this->composeSpecialAttribute()
+        );
     }
 }
