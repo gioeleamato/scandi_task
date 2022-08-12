@@ -1,53 +1,45 @@
 
 
 /********************************GENERAL CSS*************************************/
-*
-{
+* {
     margin: 0;
     padding:0;
     box-sizing: border-box;
 }
 
-body
-{
+body {
     height:100vh;
     font-family: 'Quicksand', sans-serif;
     background:linear-gradient(120deg, #F8F1D0,#D6CDB6);
 }
 
-header
-{
+header {
     width: 100%;
     height: 10vh;
     background:#D6CDB6;
-    
     font-size: 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.title
-{
+.title {
     margin-left: 30px;
     display:flex;
     justify-content: center;
     align-items: center;
 }
 
-header h2
-{
+header h2 {
     margin-left:10px;
     color:#585858;
 }
 
-.buttons
-{
+.buttons {
     margin-right: 30px;
 }
 
-button
-{
+button {
     border: none;
     padding: 10px 20px;
     font-family: 'Quicksand', sans-serif;
@@ -57,14 +49,12 @@ button
     transition: all 0.5s ease;
 }
 
-button:hover
-{
+button:hover {
     background: #585858;
     color: #fff;
 }
 
-input[type='submit']
-{
+input[type='submit'] {
     border: none;
     padding: 10px 20px;
     font-family: 'Quicksand', sans-serif;
@@ -73,14 +63,12 @@ input[type='submit']
     transition: all 0.5s ease;
 }
 
-input[type='submit']:hover
-{
+input[type='submit']:hover {
     background: #585858;
     color: #fff;
 }
 
-.container
-{
+.container {
     position:relative;
     width: 100%;
     height:80vh;
@@ -92,8 +80,7 @@ input[type='submit']:hover
     overflow-y: scroll;
 }
 
-footer
-{
+footer {
     width: 100%;
     height: 10vh;
     background: #D6CDB6;
@@ -104,56 +91,44 @@ footer
 
 
 /********************************PRODUCTS PAGE*************************************/
-
-.fa-shopping-cart
-{
-    
+.fa-shopping-cart {
     color:#585858;
 }
 
-.productListContainer
-{
+.productListContainer {
     position:absolute;
     top:20px;
     width:100%;
     display: flex;
     justify-content: center;
-    
-    
 }
 
-#product-list
-{
+#product-list {
     width:94%;
     display:flex;
     justify-content: flex-start;
     align-items: center;
     flex-wrap:wrap;
-    
 }
 
-.noItemsContainer
-{
+.noItemsContainer {
     display:flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.noItemsImage
-{
+.noItemsImage {
     transform: scale(0.8);
     opacity:0.1;
 }
 
-.noItemsText
-{
+.noItemsText {
     font-size: 2rem;
     opacity: 0.5;
 }
 
-.product-box
-{
+.product-box {
     margin:10px;
     position: relative;
     width: 180px;
@@ -167,22 +142,19 @@ footer
     color:#fff;
 }
 
-.delete-checkbox
-{
+.delete-checkbox {
     position: absolute;
     left: 5px;
     top: 5px;
 }
 
-.product-box .fa-solid
-{
+.product-box .fa-solid {
     position: relative;
     font-size: 4rem;
     opacity: 0.4;
 }
 
-.product-info
-{
+.product-info {
     margin-top: 5px;
     display:flex;
     justify-content: center;
@@ -190,52 +162,41 @@ footer
     flex-direction: column;
 }
 
-.detail
-{
+.detail {
     font-size: 1rem;
 }
 
-.detail.special
-{
+.detail.special {
     font-size: 0.7rem;
 }
 
 /********************************ADD PRODUCTS PAGE*************************************/
-
-.fa-cart-plus
-{
-    
+.fa-cart-plus {
     color:#585858;
 }
 
-#product_form
-{
+#product_form {
     position:absolute;
     top:20px;
     width:100%;
-    
     display:flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.inputElement
-{
+.inputElement {
     margin-top: 10px;
     position: relative;
 }
 
-label
-{
-    
+label {
     text-align: left;
     font-size: 1.5rem;
     color:#585858;
 }
 
-#product_form input
-{
+#product_form input {
     width: 300px;
     border: none;
     outline:none;
@@ -244,23 +205,17 @@ label
     font-size: 1.5rem;
     color:#585858;
     transition: all 0.5s ease;
-    
 }
 
-#product_form input::placeholder
-{
+#product_form input::placeholder {
     opacity:0.4;
 }
 
-input[value='Save']
-{
+input[value='Save'] {
     background: rgb(83, 189, 73);
 }
 
-
-
-.notificationBox
-{
+.notificationBox {
     width: 150px;
     height: 50px;
     padding: 10px 15px;
@@ -276,10 +231,8 @@ input[value='Save']
     z-index: 2;
 }
 
-.notificationBox::before
-{
+.notificationBox::before {
     content:"";
-    
     border:10px solid transparent;
     border-right:10px solid rgb(235, 103, 80);
     position: absolute;
@@ -287,12 +240,9 @@ input[value='Save']
     left:-20px;
     width:1px;
     height:1px;
-    
-    
 }
 
-.notificationBox.wrongValue
-{
+.notificationBox.wrongValue {
     height: 65px;
 }
 /*
@@ -311,9 +261,8 @@ input[value='Save']
     bottom: 0px;
 }*/
 
-.common-info
-{   position: relative;
-    
+.common-info {
+    position: relative;
     width: 300px;
     display: flex;
     justify-content: center;
@@ -321,21 +270,15 @@ input[value='Save']
     flex-direction: column;
 }
 
-.special-attr-sel
-{
+.special-attr-sel {
     position: relative;
-    
     margin-top: 40px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
-    
 }
 
-#productType
-{
-    
+#productType {
     width: 300px;
     padding:1rem;
     position: relative;
@@ -350,8 +293,7 @@ input[value='Save']
     transition: all 0.5s ease;
 }
 
-.special-attr-sel::after
-{
+.special-attr-sel::after {
     content:"\25BC";
     position: absolute;
     top:0;
@@ -363,28 +305,23 @@ input[value='Save']
     transition: all 0.3s ease;
 }
 
-.special-attr-sel:hover::after
-{
+.special-attr-sel:hover::after {
     color:#C0BDAE;
     background:#585858;
 }
 
-.special-attr-sel .notificationBox
-{
+.special-attr-sel .notificationBox {
     top:0;
 }
 
-#productType #voidCategory
-{
+#productType #voidCategory {
     color: rgba(0,0,0,0.2);
 }
 
 /*Div of the special attributes*/
 
-.special-attribute-box
-{
+.special-attribute-box {
     position: relative;
-    
     margin-top: 30px;
     width: 300px;
     /*height:300px;*/
@@ -393,39 +330,30 @@ input[value='Save']
     align-items: flex-start;
 }
 
-.special-attribute
-{
+.special-attribute {
     position:relative;
-    
     width:100%;
-    
     display: flex;
     justify-content: center;
     align-items: left;
     flex-direction: column;
     /*border: 2px solid red;*/
-    
 }
 
-.special-attribute.hide
-{
+.special-attribute.hide {
     display:none;
     opacity:0;
 }
 
-.special-attribute label
-{
+.special-attribute label {
     position:relative;
 }
 
-
-.special-attribute input
-{
+.special-attribute input {
     margin-bottom: 10px;
 }
 
-.special-attribute-field
-{
+.special-attribute-field {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -433,7 +361,6 @@ input[value='Save']
     flex-direction: column;
 }
 
-.special-attribute p
-{
+.special-attribute p {
     text-align: center;
 }
