@@ -50,7 +50,7 @@
             <div class="special-attr-sel">
                 <select id="productType" name="category" required>
                     <option id="voidCategory" value="voidCategory">Choose a category</option>
-                    <option id="dvd" value="disc">DVD</option>
+                    <option id="disc" value="disc">DVD</option>
                     <option id="book" value="book">Book</option>
                     <option id="furniture" value="furniture">Furniture</option>
                 </select>
