@@ -98,7 +98,7 @@ function detectCategory(e)
             boxAttributeFurniture.classList.add("hide");
             boxAttributeBook.classList.add("hide");
             break;
-        case "dvd":
+        case "disc":
             boxAttributeDisc.classList.remove("hide");
             boxAttributeFurniture.classList.add("hide");
             boxAttributeBook.classList.add("hide");
